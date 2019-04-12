@@ -115,7 +115,8 @@
 9. `git checkout master` 切换到分支*master*
 10. `git merge dev` 合并指定分支(*dev*)到当前分支
     1. `Fast-forward` 快速合并模式
-11. `git branch -d dev` 删除分支*dev*
+11. `git branch -d dev` 删除本地分支*dev*
+12. `git push origin --delete dev` 删除远程dev分支
 
 ---
 
