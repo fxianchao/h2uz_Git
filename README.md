@@ -194,3 +194,16 @@
 1. `git pull orgin <分支名称>`
 
 ---
+
+### github上更新fork而来的项目
+
+1. 使用PR,这种方法在github网页操作,没有命令行操作
+2. 本地命令行操作
+   1. 配置上游项目地址`git remote add upstream <上游分支>`
+   2. 查看是否配置成功配置`git remote -v`
+   3. 获取上游项目更新.使用fetch命令更新,fetch后会被存储在一个本地分支`git fetch upstream` 
+   4. 合并到本地分支.切换到master分支，合并upstream/master分支`git merge upstream/master`
+   5. 提交推送`git push origin master`
+   6. 当不使用时删除上游项目地址`git remote remove <name>`
+
+---
